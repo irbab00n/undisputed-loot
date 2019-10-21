@@ -8,7 +8,7 @@ interface LootTitleProps {
 
 const LootTitle = ({ children = null, quality = 'common' }: LootTitleProps) => {
   return (
-    <h4 className={`loot-entry-text text-${quality.toLowerCase()}`}>
+    <h4 className={`loot-entry-title text-${quality.toLowerCase()}`}>
       {children}
     </h4>
   );

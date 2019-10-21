@@ -1,16 +1,23 @@
 import React from 'react';
 import './LootEntry.css';
 
+import LootTitle from './LootTitle';
+
 interface LootHeaderProps {
-  recipient?: string;
+  quality?: string;
   iconURL?: string;
+  name?: string;
 }
 
-const LootHeader = ({ recipient = '', iconURL = '' }: LootHeaderProps) => {
+const LootHeader = ({
+  quality = '',
+  iconURL = '',
+  name = '',
+}: LootHeaderProps) => {
   return (
     <div className="loot-entry-header">
       <img src={iconURL} />
-      <h4 className="text-tooltip">{recipient}</h4>
+      <LootTitle quality={quality}>{name}</LootTitle>
     </div>
   );
 };

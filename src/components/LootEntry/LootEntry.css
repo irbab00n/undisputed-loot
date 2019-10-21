@@ -1,5 +1,7 @@
 .loot-entry-container {
   background-color: #080d21;
+  display: flex;
+  flex-direction: column;
   margin: 5px;
   padding: 5px;
 }
@@ -16,7 +18,12 @@
 }
 
 .loot-entry-text {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.wowhead-link {
+  margin-top: 10px;
+  margin-left: auto;
 }
 
 .text-epic {
