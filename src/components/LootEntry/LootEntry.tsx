@@ -31,11 +31,7 @@ const LootEntry = ({ entry = {} }: LootEntryProps) => {
           </LootTitle>
           <LootBoss raid={entry.zone} boss={entry.boss} />
         </div>
-
-        {/* <LootBoss raid={entry.zone} boss={entry.boss} /> */}
       </div>
-
-      <div className="loot-entry-layout"></div>
     </Column>
   );
 };

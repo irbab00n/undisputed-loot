@@ -5,6 +5,7 @@
 }
 
 .author-cred {
+  min-width: calc(1200px / 3 - 32px);
   margin-top: 20px;
   display: flex;
   justify-content: center;

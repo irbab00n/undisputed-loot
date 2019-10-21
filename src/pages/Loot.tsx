@@ -11,6 +11,7 @@ const Loot = () => (
     {mockHistory.map((entry: any) => (
       <LootEntry entry={entry} />
     ))}
+    <span className="author-cred">{`Made by Sarc`}</span>
   </Page>
 );
 
