@@ -21,9 +21,22 @@
   width: 64px;
 }
 
+.loot-entry-title {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.loot-entry-title:hover {
+  text-decoration: underline;
+}
+
 .loot-entry-text {
   font-size: 14px;
 }
+/* 
+.loot-entry-label {
+  font-size: 12px;
+} */
 
 .wowhead-link {
   margin-top: 20px;
@@ -31,6 +44,9 @@
 
 .text-epic {
   color: #a335ee !important;
+}
+.text-uncommon {
+  color: #1eff00 !important;
 }
 .text-common {
   color: white !important;

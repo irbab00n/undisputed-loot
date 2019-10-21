@@ -23,17 +23,19 @@ const LootEntry = ({ entry = {} }: LootEntryProps) => {
           name={entry.item.name}
         />
         <div>
-          <LootTitle quality={entry.item.quality.type}>
+          <LootTitle
+            quality={entry.item.quality.type}
+            href={`https://classic.wowhead.com/item=${entry.item_id}`}
+          >
             {entry.item.name}
           </LootTitle>
-          {/* <LootItemLevel>{entry.item.level}</LootItemLevel> */}
           <LootBoss raid={entry.zone} boss={entry.boss} />
         </div>
+
+        {/* <LootBoss raid={entry.zone} boss={entry.boss} /> */}
       </div>
-      <LootLink
-        href={`https://classic.wowhead.com/item=${entry.item_id}`}
-        className="wowhead-link"
-      />
+
+      <div className="loot-entry-layout"></div>
     </Column>
   );
 };

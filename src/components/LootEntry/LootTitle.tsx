@@ -4,13 +4,18 @@ import './LootEntry.css';
 interface LootTitleProps {
   children?: any;
   quality?: string;
+  href?: string;
 }
 
-const LootTitle = ({ children = null, quality = 'common' }: LootTitleProps) => {
+const LootTitle = ({
+  children = null,
+  quality = 'common',
+  href = '',
+}: LootTitleProps) => {
   return (
-    <h4 className={`loot-entry-title text-${quality.toLowerCase()}`}>
+    <a className={`loot-entry-title text-${quality.toLowerCase()}`} href={href}>
       {children}
-    </h4>
+    </a>
   );
 };
 
