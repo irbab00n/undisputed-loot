@@ -9,8 +9,14 @@ interface LootBossProps {
 const LootBoss = ({ raid = '', boss = '' }: LootBossProps) => {
   return (
     <div>
-      <h4 className="loot-entry-text">{`Raid: ${raid}`}</h4>
-      <h4 className="loot-entry-text">{`Boss: ${boss}`}</h4>
+      <h4 className="loot-entry-text text-common">
+        <span className="text-tooltip">Raid: </span>
+        {`${raid}`}
+      </h4>
+      <h4 className="loot-entry-text text-common">
+        <span className="text-tooltip">Boss: </span>
+        {`${boss}`}
+      </h4>
     </div>
   );
 };

@@ -3,18 +3,22 @@
   display: flex;
   flex-direction: column;
   margin: 5px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .loot-entry-container * {
   margin: 0;
 }
 
-.loot-entry-header {
-  align-items: center;
+.loot-entry-layout {
+  background-color: #080d21;
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
+}
+
+.loot-entry-icon {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
 }
 
 .loot-entry-text {
@@ -22,8 +26,7 @@
 }
 
 .wowhead-link {
-  margin-top: 10px;
-  margin-left: auto;
+  margin-top: 20px;
 }
 
 .text-epic {
