@@ -1,0 +1,28 @@
+.loot-entry-container {
+  margin: 5px;
+  padding: 5px;
+}
+
+.loot-entry-container * {
+  margin: 0;
+}
+
+.loot-entry-text {
+  font-size: 12px;
+}
+
+.text-epic {
+  color: #a335ee !important;
+}
+.text-common {
+  color: white !important;
+}
+.text-attribute {
+  color: #1eff00 !important;
+}
+.text-tooltip {
+  color: #ffd100 !important;
+}
+.text-description {
+  color: #9d9d9d !important;
+}

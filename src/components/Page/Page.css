@@ -1,0 +1,9 @@
+.page {
+  width: 100%;
+}
+
+.page > .inner-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+}

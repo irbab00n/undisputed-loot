@@ -7,15 +7,15 @@
  *
  * This is a quick-hit solution and not the most optomized, but we're not serving 1,000,000+ users :)
  */
-const express = require("express");
-const bodyParser = require("body-parser");
-const path = require("path");
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 8008;
 
 const app = express();
 
-const _build = path.join(__dirname, "/build");
+const _build = path.join(__dirname, '/build');
 
 app.use(express.static(_build));
 
@@ -23,7 +23,7 @@ app.use(express.static(_build));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/*", (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(`${_build}/index.html`);
 });
 
