@@ -13,7 +13,11 @@ const LootTitle = ({
   href = '',
 }: LootTitleProps) => {
   return (
-    <a className={`loot-entry-title text-${quality.toLowerCase()}`} href={href}>
+    <a
+      className={`loot-entry-title text-${quality.toLowerCase()}`}
+      href={href}
+      target="_blank"
+    >
       {children}
     </a>
   );
