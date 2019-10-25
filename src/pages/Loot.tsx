@@ -4,11 +4,11 @@ import './Loot.css';
 import Page from '../components/Page';
 import LootEntry from '../components/LootEntry/LootEntry';
 
-import mockHistory from '../lib/mock-history.json';
+import lootHistory from '../lib/loot-history-10242019.json';
 
 const Loot = () => (
   <Page pageID="loot-page">
-    {mockHistory.map((entry: any) => (
+    {lootHistory.map((entry: any) => (
       <LootEntry entry={entry} />
     ))}
     <span className="author-cred">{`Made by Sarc`}</span>
